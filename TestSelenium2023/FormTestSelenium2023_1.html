@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Meu Formulário</title>
+  <style>
+    .erro {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <form id="meu-formulario">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+    <span id="nome-erro" class="erro"></span>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+    <span id="email-erro" class="erro"></span>
+
+    <label for="telefone">Telefone:</label>
+    <input type="tel" id="telefone" name="telefone">
+    <span id="telefone-erro" class="erro"></span>
+
+    <label for="comentarios">Comentários:</label>
+    <textarea id="comentarios" name="comentarios" maxlength="1000"></textarea>
+    <span id="comentarios-erro" class="erro"></span>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <script src="C:/Users/coelh/Pessoal/TI/CURSOS/Selenium/TestSelenium2023/FormTestSelenium2023_1.js"></script>
+</body>
+</html>

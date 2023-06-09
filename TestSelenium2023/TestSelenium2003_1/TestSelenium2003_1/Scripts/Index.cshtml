@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Meu Formulário</title>
+    <style>
+        body {
+            background-color: #f1f8ff; /* Light blue background color */
+            font-family: Arial, sans-serif; /* Font family for better readability */
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for the container */
+        }
+
+        .erro {
+            color: red;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        button[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4CAF50; /* Green button background color */
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+            button[type="submit"]:hover {
+                background-color: #45a049; /* Darker green on hover */
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Meu Formulário</h1>
+        <form id="meu-formulario">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone">
+
+            <label for="comentarios">Comentários:</label>
+            <textarea id="comentarios" name="comentarios" maxlength="1000"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script src="C:/Users/coelh/Pessoal/TI/CURSOS/Selenium/TestSelenium2023/FormTestSelenium2023_1.js"></script>
+</body>
+</html>
