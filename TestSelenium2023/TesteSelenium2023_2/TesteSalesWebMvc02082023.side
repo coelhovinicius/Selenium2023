@@ -1,0 +1,508 @@
+{
+  "id": "b0c566e1-c3a5-4aa5-8143-a19d9695e172",
+  "version": "2.0",
+  "name": "SalesWebMvc",
+  "url": "https://localhost:44309/Sellers",
+  "tests": [{
+    "id": "1faaced4-fea1-4ca8-95dd-db9ec7092869",
+    "name": "TC01TelaDeCadastroDeCendedores",
+    "commands": [{
+      "id": "3550dd8f-c7c8-4732-9f67-9579ee6055bd",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44309/Sellers",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4e764093-ca11-4a36-83f3-a31c41c66dbd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x700",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fcd5255d-c3d7-4de0-9a22-7534b5f4bb9b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Create New",
+      "targets": [
+        ["linkText=Create New", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Create New')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Sellers/Create')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Create New')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0cec940-cb24-4872-b6ed-ab1474df56db",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Criar')]", "xpath:innerText"]
+      ],
+      "value": "Criar"
+    }, {
+      "id": "fccd93c0-0604-4b8f-aa6d-5fb285967740",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h4",
+      "targets": [
+        ["css=h4", "css:finder"],
+        ["xpath=//h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Novo Vendedor')]", "xpath:innerText"]
+      ],
+      "value": "Novo Vendedor"
+    }, {
+      "id": "54aeddee-ae9f-456d-89af-50f63444eb06",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.form-group:nth-child(2) > .control-label",
+      "targets": [
+        ["css=.form-group:nth-child(2) > .control-label", "css:finder"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Nome')]", "xpath:innerText"]
+      ],
+      "value": "Nome"
+    }, {
+      "id": "40f67a91-9b84-44bf-a5e5-6c4647956b12",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=Seller_Name",
+      "targets": [
+        ["id=Seller_Name", "id"],
+        ["name=Seller.Name", "name"],
+        ["css=#Seller_Name", "css:finder"],
+        ["xpath=//input[@id='Seller_Name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f8d5da7-128d-48ce-ab80-09df43bc7704",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.form-group:nth-child(3) > .control-label",
+      "targets": [
+        ["css=.form-group:nth-child(3) > .control-label", "css:finder"],
+        ["xpath=//div[3]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'E-mail')]", "xpath:innerText"]
+      ],
+      "value": "E-mail"
+    }, {
+      "id": "9ddf5456-5612-4145-86b0-a4e14ce2fad4",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=Seller_Email",
+      "targets": [
+        ["id=Seller_Email", "id"],
+        ["name=Seller.Email", "name"],
+        ["css=#Seller_Email", "css:finder"],
+        ["xpath=//input[@id='Seller_Email']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7bb9898-4a3f-410f-aa17-8d36d13db5e5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.form-group:nth-child(4) > .control-label",
+      "targets": [
+        ["css=.form-group:nth-child(4) > .control-label", "css:finder"],
+        ["xpath=//div[4]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Data de Nascimento')]", "xpath:innerText"]
+      ],
+      "value": "Data de Nascimento"
+    }, {
+      "id": "66e00373-5242-4c25-b5a3-9323352015ad",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=Seller_BirthDate",
+      "targets": [
+        ["id=Seller_BirthDate", "id"],
+        ["name=Seller.BirthDate", "name"],
+        ["css=#Seller_BirthDate", "css:finder"],
+        ["xpath=//input[@id='Seller_BirthDate']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "61663bc6-75d2-4abc-85f8-58dcca827fce",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.form-group:nth-child(5) > .control-label",
+      "targets": [
+        ["css=.form-group:nth-child(5) > .control-label", "css:finder"],
+        ["xpath=//div[5]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Salário Base')]", "xpath:innerText"]
+      ],
+      "value": "Salário Base"
+    }, {
+      "id": "51fe553b-7912-4c8d-8ed9-a2d11ae7cd70",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=Seller_BaseSalary",
+      "targets": [
+        ["id=Seller_BaseSalary", "id"],
+        ["name=Seller.BaseSalary", "name"],
+        ["css=#Seller_BaseSalary", "css:finder"],
+        ["xpath=//input[@id='Seller_BaseSalary']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e85a1450-0ee8-4940-837e-9b1554e4db98",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.form-group:nth-child(6) > .control-label",
+      "targets": [
+        ["css=.form-group:nth-child(6) > .control-label", "css:finder"],
+        ["xpath=//div[6]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Departamento')]", "xpath:innerText"]
+      ],
+      "value": "Departamento"
+    }, {
+      "id": "439b5858-d1bc-4b0b-ab3e-121ab0d67662",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=Seller_DepartmentId",
+      "targets": [
+        ["id=Seller_DepartmentId", "id"],
+        ["name=Seller.DepartmentId", "name"],
+        ["css=#Seller_DepartmentId", "css:finder"],
+        ["xpath=//select[@id='Seller_DepartmentId']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'Books\nComputers\nElectronics\nFashion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5fa11de6-47ab-44a4-9152-e172240ba432",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Salvar']", "xpath:attributes"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ea39b49-2440-481f-a0ed-847d8eb8f163",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Voltar à Lista",
+      "targets": [
+        ["linkText=Voltar à Lista", "linkText"],
+        ["css=.form-group > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Voltar à Lista')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/Sellers')])[2]", "xpath:href"],
+        ["xpath=//div[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Voltar à Lista')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b017c5f-d4bc-4157-a510-0a7e4c088969",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Salvar']", "xpath:attributes"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7b63f97-7909-4902-8d3c-f6d0f440e411",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.text-danger li:nth-child(1)",
+      "targets": [
+        ["css=.text-danger li:nth-child(1)", "css:finder"],
+        ["xpath=//form/div/ul/li", "xpath:position"],
+        ["xpath=//li[contains(.,'Name required')]", "xpath:innerText"]
+      ],
+      "value": "Name required"
+    }, {
+      "id": "b7613fc6-8657-42b9-9267-ffbec32385d3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.text-danger li:nth-child(2)",
+      "targets": [
+        ["css=.text-danger li:nth-child(2)", "css:finder"],
+        ["xpath=//form/div/ul/li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Email required')]", "xpath:innerText"]
+      ],
+      "value": "Email required"
+    }, {
+      "id": "8872ffc2-54c4-4afb-b6f5-7cfb4cd112f7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.text-danger li:nth-child(3)",
+      "targets": [
+        ["css=.text-danger li:nth-child(3)", "css:finder"],
+        ["xpath=//form/div/ul/li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'Birth Date required')]", "xpath:innerText"]
+      ],
+      "value": "Birth Date required"
+    }, {
+      "id": "0f815026-8fa5-4654-86dd-0aa8357485a8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.text-danger li:nth-child(4)",
+      "targets": [
+        ["css=.text-danger li:nth-child(4)", "css:finder"],
+        ["xpath=//form/div/ul/li[4]", "xpath:position"],
+        ["xpath=//li[contains(.,'Base Salary required')]", "xpath:innerText"]
+      ],
+      "value": "Base Salary required"
+    }, {
+      "id": "79f61c1f-5970-4466-a5de-d057396ecdf0",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=Seller_Name-error",
+      "targets": [
+        ["id=Seller_Name-error", "id"],
+        ["css=#Seller_Name-error", "css:finder"],
+        ["xpath=//span[@id='Seller_Name-error']", "xpath:attributes"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": "Name required"
+    }, {
+      "id": "ada4bc71-a126-42ac-a8d5-ba130d1fb7cc",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=Seller_Email-error",
+      "targets": [
+        ["id=Seller_Email-error", "id"],
+        ["css=#Seller_Email-error", "css:finder"],
+        ["xpath=//span[@id='Seller_Email-error']", "xpath:attributes"],
+        ["xpath=//div[3]/span/span", "xpath:position"]
+      ],
+      "value": "Email required"
+    }, {
+      "id": "cf9ff018-fb48-43a6-96cf-f7e2cd5fb52e",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=Seller_BirthDate-error",
+      "targets": [
+        ["id=Seller_BirthDate-error", "id"],
+        ["css=#Seller_BirthDate-error", "css:finder"],
+        ["xpath=//span[@id='Seller_BirthDate-error']", "xpath:attributes"],
+        ["xpath=//div[4]/span/span", "xpath:position"]
+      ],
+      "value": "Birth Date required"
+    }, {
+      "id": "6990940e-f830-4f6a-a3ee-6aaa3641c570",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=Seller_BaseSalary-error",
+      "targets": [
+        ["id=Seller_BaseSalary-error", "id"],
+        ["css=#Seller_BaseSalary-error", "css:finder"],
+        ["xpath=//span[@id='Seller_BaseSalary-error']", "xpath:attributes"],
+        ["xpath=//div[5]/span/span", "xpath:position"]
+      ],
+      "value": "Base Salary required"
+    }, {
+      "id": "d8fc7e12-4805-4ae6-82a3-f476157b03ee",
+      "comment": "",
+      "command": "type",
+      "target": "id=Seller_Name",
+      "targets": [
+        ["id=Seller_Name", "id"],
+        ["name=Seller.Name", "name"],
+        ["css=#Seller_Name", "css:finder"],
+        ["xpath=//input[@id='Seller_Name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Daniel"
+    }, {
+      "id": "fb76e814-d3d9-4311-9b2f-0edc8bcf991e",
+      "comment": "",
+      "command": "type",
+      "target": "id=Seller_Email",
+      "targets": [
+        ["id=Seller_Email", "id"],
+        ["name=Seller.Email", "name"],
+        ["css=#Seller_Email", "css:finder"],
+        ["xpath=//input[@id='Seller_Email']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "daniel@daniel.com"
+    }, {
+      "id": "16be8973-e59b-478d-b117-f3f5b4d3d588",
+      "comment": "",
+      "command": "type",
+      "target": "id=Seller_BirthDate",
+      "targets": [
+        ["id=Seller_BirthDate", "id"],
+        ["name=Seller.BirthDate", "name"],
+        ["css=#Seller_BirthDate", "css:finder"],
+        ["xpath=//input[@id='Seller_BirthDate']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "0002-02-12"
+    }, {
+      "id": "ce91a9be-963f-4d32-94a2-3fee2982e6c1",
+      "comment": "",
+      "command": "type",
+      "target": "id=Seller_BirthDate",
+      "targets": [
+        ["id=Seller_BirthDate", "id"],
+        ["name=Seller.BirthDate", "name"],
+        ["css=#Seller_BirthDate", "css:finder"],
+        ["xpath=//input[@id='Seller_BirthDate']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "0020-02-12"
+    }, {
+      "id": "dfceffc0-cbf2-4017-b1a8-06024a00eec8",
+      "comment": "",
+      "command": "type",
+      "target": "id=Seller_BirthDate",
+      "targets": [
+        ["id=Seller_BirthDate", "id"],
+        ["name=Seller.BirthDate", "name"],
+        ["css=#Seller_BirthDate", "css:finder"],
+        ["xpath=//input[@id='Seller_BirthDate']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d3465a0-9d5d-4f7d-8aa8-400c21252d5c",
+      "comment": "",
+      "command": "type",
+      "target": "id=Seller_BirthDate",
+      "targets": [
+        ["id=Seller_BirthDate", "id"],
+        ["name=Seller.BirthDate", "name"],
+        ["css=#Seller_BirthDate", "css:finder"],
+        ["xpath=//input[@id='Seller_BirthDate']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "0001-02-12"
+    }, {
+      "id": "c9153495-34d4-4910-a881-c7319339f29c",
+      "comment": "",
+      "command": "type",
+      "target": "id=Seller_BirthDate",
+      "targets": [
+        ["id=Seller_BirthDate", "id"],
+        ["name=Seller.BirthDate", "name"],
+        ["css=#Seller_BirthDate", "css:finder"],
+        ["xpath=//input[@id='Seller_BirthDate']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "0019-02-12"
+    }, {
+      "id": "7085024f-a485-4bf2-8868-9b40da31b1e3",
+      "comment": "",
+      "command": "type",
+      "target": "id=Seller_BirthDate",
+      "targets": [
+        ["id=Seller_BirthDate", "id"],
+        ["name=Seller.BirthDate", "name"],
+        ["css=#Seller_BirthDate", "css:finder"],
+        ["xpath=//input[@id='Seller_BirthDate']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "0197-02-12"
+    }, {
+      "id": "4e3a90f7-c4c5-4a29-bc8a-99e201139064",
+      "comment": "",
+      "command": "type",
+      "target": "id=Seller_BirthDate",
+      "targets": [
+        ["id=Seller_BirthDate", "id"],
+        ["name=Seller.BirthDate", "name"],
+        ["css=#Seller_BirthDate", "css:finder"],
+        ["xpath=//input[@id='Seller_BirthDate']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "1978-02-12"
+    }, {
+      "id": "de56908b-cc5b-4512-92bb-52212b4d00cc",
+      "comment": "",
+      "command": "click",
+      "target": "id=Seller_BaseSalary",
+      "targets": [
+        ["id=Seller_BaseSalary", "id"],
+        ["name=Seller.BaseSalary", "name"],
+        ["css=#Seller_BaseSalary", "css:finder"],
+        ["xpath=//input[@id='Seller_BaseSalary']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "26e7b355-f110-46cd-888c-d6fff66bf17f",
+      "comment": "",
+      "command": "type",
+      "target": "id=Seller_BaseSalary",
+      "targets": [
+        ["id=Seller_BaseSalary", "id"],
+        ["name=Seller.BaseSalary", "name"],
+        ["css=#Seller_BaseSalary", "css:finder"],
+        ["xpath=//input[@id='Seller_BaseSalary']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "763da5cf-18c9-4788-a54b-f781d160c0ff",
+      "comment": "",
+      "command": "click",
+      "target": "id=Seller_DepartmentId",
+      "targets": [
+        ["id=Seller_DepartmentId", "id"],
+        ["name=Seller.DepartmentId", "name"],
+        ["css=#Seller_DepartmentId", "css:finder"],
+        ["xpath=//select[@id='Seller_DepartmentId']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'Books\nComputers\nElectronics\nFashion')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca9c7f1a-7124-46d2-be0c-a03200ac9fff",
+      "comment": "",
+      "command": "select",
+      "target": "id=Seller_DepartmentId",
+      "targets": [],
+      "value": "label=Computers"
+    }, {
+      "id": "94477f36-51b2-43cc-9a02-fa200adc5dc5",
+      "comment": "",
+      "command": "click",
+      "target": "id=Seller_Name",
+      "targets": [
+        ["id=Seller_Name", "id"],
+        ["name=Seller.Name", "name"],
+        ["css=#Seller_Name", "css:finder"],
+        ["xpath=//input[@id='Seller_Name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "13f147a1-ee32-43f2-82fc-29c009e26546",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Salvar']", "xpath:attributes"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "dc50dfee-2d4a-4d40-b512-c75abf9b0f00",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["1faaced4-fea1-4ca8-95dd-db9ec7092869"]
+  }],
+  "urls": [],
+  "plugins": []
+}

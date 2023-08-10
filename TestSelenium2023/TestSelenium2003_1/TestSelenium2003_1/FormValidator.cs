@@ -12,9 +12,9 @@ namespace FormValidator
 
         public FormValidator()
         {
-            // Configurar o driver do Selenium (neste exemplo, usaremos o ChromeDriver)
+            // Configurar o driver do Selenium (neste exemplo, usaremos o ChromeDriver ou EdgeDriver)
             driver = new ChromeDriver();
-            //driver = new EdgeDriver();
+            // driver = new EdgeDriver();
         }
 
         public void ValidateForm()

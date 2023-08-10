@@ -1,0 +1,7 @@
+Formulário C#.NET para os testes com selenium
+
+Fazer correções:
+- Alertas de preenchimento de campos;
+- Incluir mensagem quando os campos não foram preenchidos corretamente;
+- Incluir campos Assunto antes da Mensagem (pode substituir pelo campo Telefone);
+- 

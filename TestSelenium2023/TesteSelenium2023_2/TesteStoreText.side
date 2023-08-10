@@ -1,0 +1,77 @@
+{
+  "id": "dd141b6e-9051-4487-8bc7-64e493a560b4",
+  "version": "2.0",
+  "name": "TesteStoreText",
+  "url": "https://localhost:44309/Sellers",
+  "tests": [{
+    "id": "cad243b9-e25a-47da-958b-fe5ebe22b727",
+    "name": "Untitled",
+    "commands": [{
+      "id": "1eab6bd9-60c7-4bb5-89ba-bda701dc9529",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44309/Sellers",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e4cfb6cf-a6ca-4413-a327-bbd8c32d076f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x700",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f4b24cb4-5edf-42d4-9426-ed4e49a6b39e",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) > td:nth-child(1)",
+      "targets": [],
+      "value": "Nome"
+    }, {
+      "id": "a49267da-f7a1-44ef-b543-3c26878ad7f5",
+      "comment": "",
+      "command": "if",
+      "target": "('${Nome}' == 'Bob Brown')",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c9ace116-ce5a-4440-845f-1724ef5a1545",
+      "comment": "",
+      "command": "echo",
+      "target": "Correto",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bae4a607-7b11-4285-b8f1-957189a8d4ba",
+      "comment": "",
+      "command": "else",
+      "target": "Incorreto",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "331ae21b-f4f4-4fce-a074-f3ee8d91f19a",
+      "comment": "",
+      "command": "endif",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "282cbb57-7bfa-4eed-bcde-dfabff48dd7b",
+      "comment": "",
+      "command": "store",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ae269c0d-db67-466d-a628-e6bd401c795d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["cad243b9-e25a-47da-958b-fe5ebe22b727"]
+  }],
+  "urls": ["https://localhost:44309/Sellers"],
+  "plugins": []
+}
