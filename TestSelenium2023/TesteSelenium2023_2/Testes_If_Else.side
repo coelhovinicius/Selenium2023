@@ -7,10 +7,24 @@
     "id": "cad243b9-e25a-47da-958b-fe5ebe22b727",
     "name": "CT01TestesIfElse",
     "commands": [{
+      "id": "7ddd82b2-34c0-491d-b17b-ba71359f309b",
+      "comment": "",
+      "command": "//Abre a URL do formulário",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "162e002f-0ac4-4647-ab53-32209e2bf8ff",
       "comment": "",
       "command": "open",
       "target": "https://localhost:44309/Sellers",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8619ff83-4483-4e7d-8832-90411567e6eb",
+      "comment": "",
+      "command": "//Armazena o valor do título do formulário (\"Target\") na variável \"title\"",
+      "target": "",
       "targets": [],
       "value": ""
     }, {
@@ -21,6 +35,13 @@
       "targets": [],
       "value": "title"
     }, {
+      "id": "c9ec9769-e15f-4428-8e9d-fbea886dac3d",
+      "comment": "",
+      "command": "//Estrutura condicional para validação da variável \"title\"",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "fb2e03f5-229b-44ac-8c29-a43a4c1384e1",
       "comment": "",
       "command": "if",
@@ -28,23 +49,51 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "de4d13fa-f256-4539-a541-361f11c1c786",
+      "comment": "",
+      "command": "//Se verdadeiro, exibe \"Verdadeiro\"",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "484df1c4-c34d-4813-be51-1cdff18fc5e5",
       "comment": "",
       "command": "echo",
-      "target": "Verdadeiro",
+      "target": "[Primeira Condição] Verdadeiro",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c5abffb5-8e0b-4837-aac4-6ab8269e1b26",
+      "comment": "",
+      "command": "//Senão, exibe \"Falso\"",
+      "target": "",
       "targets": [],
       "value": ""
     }, {
       "id": "2c4d7143-12f2-47b9-93e9-49e283d0baf3",
       "comment": "",
       "command": "else",
-      "target": "Falso",
+      "target": "[Segunda Condição] Falso",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "27c0814b-0414-4df6-bc31-ed91b401440f",
+      "comment": "",
+      "command": "//Fim da estrutura condicional",
+      "target": "",
       "targets": [],
       "value": ""
     }, {
       "id": "b9d06300-48b2-4599-8b80-48828e5e7eb9",
       "comment": "",
       "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "95e4821c-0b16-424b-9c3f-ea559777d58f",
+      "comment": "",
+      "command": "//Armazena o valor do texto desejado na variável \"name\" (nesse caso, o valor na primeira linha da coluna \"Nome\" do formulário)",
       "target": "",
       "targets": [],
       "value": ""
